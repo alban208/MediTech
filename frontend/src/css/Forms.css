@@ -1,0 +1,119 @@
+:root {
+  --bs-primary: #4CAF50;
+  --bs-accent: #66BB6A;
+  --bs-light: #F8FAF8;
+  --text-primary: #1B1B1B;
+  --text-secondary: #4F4F4F;
+  --bs-error: #E57373;
+}
+
+/* Global Form Styles */
+.form-container {
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  color: var(--text-primary);
+  background-color: var(--bs-light);
+}
+
+.input-group input:focus {
+  border-color: var(--bs-primary);
+  outline: none;
+}
+
+.input-group .icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.options .remember {
+  display: flex;
+  align-items: center;
+}
+
+.options .forgot {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+.options .forgot:hover {
+  text-decoration: underline;
+  color: var(--bs-accent);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--bs-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--bs-accent);
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.register-link {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+  color: var(--bs-accent);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}

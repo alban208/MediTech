@@ -1,0 +1,128 @@
+.chat-container {
+  display: flex;
+  height: 80vh;
+  background: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Liste des contacts */
+.contacts-list {
+  width: 25%;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.contact-item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-item:hover, .contact-item.active {
+  background: #007bff;
+  color: white;
+}
+
+.notif-badge {
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* Zone de chat */
+.chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #e9ecef;
+}
+
+.message {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.message.sent {
+  background: #007bff;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.message.received {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-right: auto;
+}
+
+.message small {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #0056b3;
+}
+
+.chat-placeholder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+}

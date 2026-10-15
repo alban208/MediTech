@@ -1,0 +1,61 @@
+.historique-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.historique-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.no-rdv {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.rdv-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.rdv-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.rdv-card:hover {
+  transform: translateY(-4px);
+}
+
+.rdv-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.rdv-info p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.rdv-meta {
+  margin-top: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  font-size: 0.8rem;
+}

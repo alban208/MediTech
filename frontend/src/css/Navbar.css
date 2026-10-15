@@ -1,0 +1,133 @@
+/* Navbar.css */
+/* .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-buttons .btn {
+  background-color: #555;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+.navbar-buttons .btn:hover {
+  background-color: #777;
+} */
+
+/* Menu Burger */
+/* .menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+} */
+
+/* Media Queries for Responsive Design */
+/* @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+} */
+
+.custom-navbar {
+  background-color: #d4f5e6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1000;
+}
+
+.custom-navbar .navbar-brand {
+  color: #2e7d32 !important;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .dropdown-toggle {
+  color: #2e7d32 !important;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .dropdown-item:hover {
+  background-color: #b2dfdb !important;
+  color: #004d40 !important;
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #e0f2f1;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+}
+
+.custom-navbar .dropdown-item {
+  padding: 0.5rem 1.2rem;
+  color: #2e7d32 !important;
+}
+
+.custom-navbar .dropdown-item:active {
+  background-color: #a5d6a7 !important;
+}
+

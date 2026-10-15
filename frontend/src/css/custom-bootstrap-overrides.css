@@ -1,0 +1,46 @@
+/* Couleurs personnalisées pour Bootstrap */
+:root {
+  --bs-primary: #4CAF50;
+  --bs-secondary: #A5D6A7;
+  --bs-success: #66BB6A;
+  --bs-light: #F8FAF8;
+  --bs-danger: #E57373;
+  --bs-warning-bg-subtle: #FFF3E0;
+
+  --bs-body-color: #1B1B1B;
+  --bs-body-bg: #F8FAF8;
+}
+
+/* Pour être sûr que les boutons Bootstrap utilisent notre vert */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--bs-success) !important;
+  border-color: var(--bs-success) !important;
+}
+
+/* Navbar personnalisée */
+.navbar {
+  background-color: var(--bs-primary) !important;
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  color: #f1f1f1 !important;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App > .content {
+  flex: 1;
+}
